@@ -11,3 +11,11 @@ button {
     font-family: "Fredoka One";
     color: rgb(222, 0, 0)
 }
+input {
+    font-size: 17.5px;
+    background-color: rgb(255, 231, 188);
+    width: 50%;
+    font-family: "Fredoka One";
+    color: rgb(22, 22, 22);
+    size: 100%
+}
