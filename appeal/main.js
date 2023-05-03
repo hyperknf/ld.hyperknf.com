@@ -16,7 +16,7 @@ function Submit() {
         el("else").value
     ]
     for (let i in inputs) if (String(inputs[i]).replaceAll(" ", "") == "") Invalid()
-    if (inputs[1] >= 3e18) Invalid()
+    if (parseInt(inputs[1]) >= 3e18) Invalid()
     
     const request = new XMLHttpRequest()
     request.open("POST", "https://discord.com/api/webhooks/1103257319388762182/cySd5bdvw9tncp-oaX07I75zxER6_XvSoz6YdTZzaabqOxnQHbxCNDQfeP-Xw_2kVcz1")
