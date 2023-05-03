@@ -15,8 +15,8 @@ function Submit() {
         el("understand").value,
         el("else").value
     ]
-    for (let i in inputs) if (String(inputs[i]).replaceAll(" ", "") == "") Invalid()
-    if (parseInt(inputs[1]) >= 3e18) Invalid()
+    for (let i in inputs) if (String(inputs[i]).replaceAll(" ", "") == "") return Invalid()
+    if (parseInt(inputs[1]) >= 3e18) return Invalid()
     
     const request = new XMLHttpRequest()
     request.open("POST", atob("aHR0cHM6Ly9kaXNjb3JkLmNvbS9hcGkvd2ViaG9va3MvMTEwMzI1NzMxOTM4ODc2MjE4Mi9jeVNkNWJkdnc5dG5jcC1vYVgwN0k3NXp4RVI2X1h2U296NllkVFp6YWFicU94blFIYnhDTkRRZmVQLVh3XzJrVmN6MQ=="))
