@@ -5,14 +5,14 @@ function Invalid() {
 }
 
 function Submit() {
-    const el = (ele) => document.querySelector(`.${ele}`)
+    const el = (ele) => document.querySelector(`.${ele}`).value
     const inputs = [
-        el("tag").value,
-        el("id").value,
-        el("reason").value,
-        el("length").value,
-        el("again").value,
-        el("understand").value,
+        el("tag"),
+        el("id"),
+        el("reason"),
+        el("length"),
+        el("again"),
+        el("understand"),
         el("else").value
     ]
     let isInvalid = false
