@@ -16,6 +16,7 @@ function Submit() {
         el("else").value
     ]
     for (let i in input) if (String(input[i]).replace(/ /g, "") == "") Invalid()
+    if (inputs[1] >= 2e18) Invalid()
     
     const request = new XMLHttpRequest()
     request.open("POST", atob("aHR0cHM6Ly9kaXNjb3JkLmNvbS9hcGkvd2ViaG9va3MvMTEwMzI1NzMxOTM4ODc2MjE4Mi9jeVNkNWJkdnc5dG5jcC1vYVgwN0k3NXp4RVI2X1h2U296NllkVFp6YWFicU94blFIYnhDTkRRZmVQLVh3XzJrVmN6MQ=="))
