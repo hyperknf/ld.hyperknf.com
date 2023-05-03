@@ -51,6 +51,6 @@ const loop = setInterval(() => {
     time += 1000 / 30
     if (localStorage.submitted == "true") {
         const main = document.querySelector(".main")
-        main.innerHTML = "Received your appeal, please be noted that you can only appeal once<br>You will not receive a reply, please attempt to join the server to know your status"
+        main.innerHTML = "We have received your appeal, please be noted that you can only appeal once<br>You will not receive a reply, please attempt to join the server to know your status"
     }
 }, 1000 / 30)
