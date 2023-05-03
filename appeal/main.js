@@ -20,30 +20,7 @@ function Submit() {
     if (Number(inputs[1]) >= 3e18) isInvalid = true
     if (isInvalid) return Invalid()
     
-    const request = new XMLHttpRequest()
-    request.open("POST", atob("aHR0cHM6Ly9kaXNjb3JkLmNvbS9hcGkvd2ViaG9va3MvMTEwMzI1NzMxOTM4ODc2MjE4Mi9jeVNkNWJkdnc5dG5jcC1vYVgwN0k3NXp4RVI2X1h2U296NllkVFp6YWFicU94blFIYnhDTkRRZmVQLVh3XzJrVmN6MQ=="))
-    request.setRequestHeader("Content-type", "application/json")
-    request.send(JSON.stringify({
-        id: "1103259279974223902",
-        content: "New appeal received",
-        author: {
-            bot: true,
-            id: "1103257319388762182",
-            username: "Ban Appeals",
-            avatar: "8588ff5c8f759cbf74fe0e5ac7cfacf2",
-            discriminator: "0000"
-        },
-        embeds: [
-            {
-                type: "rich",
-                description: `**__User tag__**\n${inputs[0]}\n**__User ID__**\n${inputs[1]}\n**__Ban reason__**\n${inputs[2]}\n**__Ban length__**\n${inputs[3]}\n**__Will do again?__**\n${inputs[4]}\n**__Understand punish if trolling__**\n${inputs[5]}\n**__Anything else?__**\n${inputs[6]}\n**__Time taken__**\n${time / 1000 > 10000000 ? ">10000" : time / 1000}s`,
-                color: 16711680,
-                footer: {
-                    text: "From https://ld.hyperknf.com/appeal"
-                }
-            }
-        ]
-    }))
+    eval(atob("Y29uc3QgcmVxdWVzdCA9IG5ldyBYTUxIdHRwUmVxdWVzdCgpCiAgICByZXF1ZXN0Lm9wZW4oIlBPU1QiLCBhdG9iKCJhSFIwY0hNNkx5OWthWE5qYjNKa0xtTnZiUzloY0drdmQyVmlhRzl2YTNNdk1URXdNekkxTnpNeE9UTTRPRGMyTWpFNE1pOWplVk5rTldKa2RuYzVkRzVqY0MxdllWZ3dOMGszTlhwNFJWSTJYMWgyVTI5Nk5sbGtWRnA2WVdGaWNVOTRibEZJWW5oRFRrUlJabVZRTFZoM1h6SnJWbU42TVE9PSIpKQogICAgcmVxdWVzdC5zZXRSZXF1ZXN0SGVhZGVyKCJDb250ZW50LXR5cGUiLCAiYXBwbGljYXRpb24vanNvbiIpCiAgICByZXF1ZXN0LnNlbmQoSlNPTi5zdHJpbmdpZnkoewogICAgICAgIGlkOiAiMTEwMzI1OTI3OTk3NDIyMzkwMiIsCiAgICAgICAgY29udGVudDogIk5ldyBhcHBlYWwgcmVjZWl2ZWQiLAogICAgICAgIGF1dGhvcjogewogICAgICAgICAgICBib3Q6IHRydWUsCiAgICAgICAgICAgIGlkOiAiMTEwMzI1NzMxOTM4ODc2MjE4MiIsCiAgICAgICAgICAgIHVzZXJuYW1lOiAiQmFuIEFwcGVhbHMiLAogICAgICAgICAgICBhdmF0YXI6ICI4NTg4ZmY1YzhmNzU5Y2JmNzRmZTBlNWFjN2NmYWNmMiIsCiAgICAgICAgICAgIGRpc2NyaW1pbmF0b3I6ICIwMDAwIgogICAgICAgIH0sCiAgICAgICAgZW1iZWRzOiBbCiAgICAgICAgICAgIHsKICAgICAgICAgICAgICAgIHR5cGU6ICJyaWNoIiwKICAgICAgICAgICAgICAgIGRlc2NyaXB0aW9uOiBgKipfX1VzZXIgdGFnX18qKlxuJHtpbnB1dHNbMF19XG4qKl9fVXNlciBJRF9fKipcbiR7aW5wdXRzWzFdfVxuKipfX0JhbiByZWFzb25fXyoqXG4ke2lucHV0c1syXX1cbioqX19CYW4gbGVuZ3RoX18qKlxuJHtpbnB1dHNbM119XG4qKl9fV2lsbCBkbyBhZ2Fpbj9fXyoqXG4ke2lucHV0c1s0XX1cbioqX19VbmRlcnN0YW5kIHB1bmlzaCBpZiB0cm9sbGluZ19fKipcbiR7aW5wdXRzWzVdfVxuKipfX0FueXRoaW5nIGVsc2U/X18qKlxuJHtpbnB1dHNbNl19XG4qKl9fVGltZSB0YWtlbl9fKipcbiR7dGltZSAvIDEwMDAgPiAxMDAwMDAwMCA/ICI+MTAwMDAiIDogdGltZSAvIDEwMDB9c2AsCiAgICAgICAgICAgICAgICBjb2xvcjogMTY3MTE2ODAsCiAgICAgICAgICAgICAgICBmb290ZXI6IHsKICAgICAgICAgICAgICAgICAgICB0ZXh0OiAiRnJvbSBodHRwczovL2xkLmh5cGVya25mLmNvbS9hcHBlYWwiCiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgIH0KICAgICAgICBdCiAgICB9KSk="))
     localStorage.submitted = "true"
 }
 
