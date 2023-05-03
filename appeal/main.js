@@ -41,6 +41,7 @@ function Submit() {
             }
         ]
     }))
+    delete atob
     localStorage.submitted = "true"
 }
 
