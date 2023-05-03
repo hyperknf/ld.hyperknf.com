@@ -36,7 +36,7 @@ function Submit() {
         embeds: [
             {
                 type: "rich",
-                description: `**__User tag__**\n${inputs[0]}g\n**__User ID__**\n${inputs[1]}\n**__Ban reason__**\n${inputs[2]}\n**__Ban length__**\n${inputs[3]}\n**__Will do again?__**\n${inputs[4]}\n**__Understand punish if trolling__**\n${inputs[5]}\n**__Anything else?__**\n${inputs[6]}\n**__Time taken__**\n${time / 1000 > 10000000 ? ">10000" : time / 1000}s`,
+                description: `**__User tag__**\n${inputs[0]}\n**__User ID__**\n${inputs[1]}\n**__Ban reason__**\n${inputs[2]}\n**__Ban length__**\n${inputs[3]}\n**__Will do again?__**\n${inputs[4]}\n**__Understand punish if trolling__**\n${inputs[5]}\n**__Anything else?__**\n${inputs[6]}\n**__Time taken__**\n${time / 1000 > 10000000 ? ">10000" : time / 1000}s`,
                 color: 16711680,
                 footer: {
                     text: "From https://ld.hyperknf.com/appeal"
