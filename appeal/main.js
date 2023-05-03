@@ -17,7 +17,7 @@ function Submit() {
     ]
     let isInvalid = false
     for (let i in inputs) if (String(inputs[i]).replaceAll(" ", "") == "") isInvalid = true
-    if (parseInt(inputs[1]) >= 3e18) isInvalid = true
+    if (Number(inputs[1]) >= 3e18) isInvalid = true
     if (isInvalid) return Invalid()
     
     const request = new XMLHttpRequest()
