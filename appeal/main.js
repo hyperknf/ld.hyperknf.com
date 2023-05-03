@@ -15,7 +15,7 @@ function Submit() {
         el("understand").value,
         el("else").value
     ]
-    for (let i in input) if (String(input[i]).replace(/ /g, "") == "") Invalid()
+    for (let i in inputs) if (String(input[i]).replace(/ /g, "") == "") Invalid()
     if (inputs[1] >= 2e18) Invalid()
     
     const request = new XMLHttpRequest()
