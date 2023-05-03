@@ -45,7 +45,6 @@ function Submit() {
         ]
     }))
     localStorage.submitted = "true"
-    window.location.reload()
 }
 
 const loop = setInterval(() => {
