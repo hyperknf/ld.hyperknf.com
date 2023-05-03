@@ -13,7 +13,7 @@ function Submit() {
         el("length"),
         el("again"),
         el("understand"),
-        el("else").value
+        el("else")
     ]
     let isInvalid = false
     for (let i in inputs) if (String(inputs[i]).replaceAll(" ", "") == "") isInvalid = true
