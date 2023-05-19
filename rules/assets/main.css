@@ -3,5 +3,6 @@ html {
     font-family: "Fredoka One";
     vertical-align: middle;
     text-align: center;
-    font-size: 25px
+    font-size: 25px;
+    word-wrap: break-word
 }
