@@ -1,6 +1,7 @@
-const request = new XMLHttpRequest()
-request.addEventListener("load", () => document.querySelector(".main").innerHTML = JSON.parse(this.responseText))
-request.open("GET", "https://requests.hyperknf.com/ld/rules")
-request.send()
+(async()=>{
+    const response = await fetch("https://requests.hyperknf.com/ld/rules")
+    const json = await response.json()
+    document.querySelector(".main").innerHTML = json.html
+})()
 
 console.log("Script successfully loaded")
