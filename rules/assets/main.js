@@ -4,7 +4,7 @@ const request = new XMLHttpRequest().open("GET", "https://requests.hyperknf.com/
 setInterval(() => {
     try {
         document.querySelector(".main").innerHTML = JSON.parse(request.responseText).html
-    } catch (exceptiom) {
+    } catch (exception) {
         console.log("Ping, data: " + JSON.stringify(request.responseText))
     }
 }, 100)
