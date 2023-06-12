@@ -1,4 +1,6 @@
-const request = new XMLHttpRequest().open("GET", "https://requests.hyperknf.com/ld/rules").send()
+const request = new XMLHttpRequest().open("GET", "https://requests.hyperknf.com/ld/rules").setRequestHeader("Content-Type", "application/json").send(
+    JSON.stringify({})
+)
 while (!JSON.stringify(request.responseText).startsWith("{")) {
     console.log("Ping")
 }
