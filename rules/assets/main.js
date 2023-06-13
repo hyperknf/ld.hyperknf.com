@@ -1,6 +1,7 @@
-const request = new XMLHttpRequest().open("GET", "https://requests.hyperknf.com/ld/rules").setRequestHeader("Content-Type", "application/json").send(
-    JSON.stringify({})
-)
+const request = new XMLHttpRequest()
+request.open("GET", "https://requests.hyperknf.com/ld/rules")
+request.setRequestHeader("Content-Type", "application/json")
+request.send(JSON.stringify({}))
 setInterval(() => {
     try {
         document.querySelector(".main").innerHTML = JSON.parse(request.responseText).html
